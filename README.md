@@ -22,11 +22,18 @@ This approach allows you to have the same codebase for all the environments and 
 
 # Quick start
 
-``python
+```python
+# import the Secret Assessor class
 from surquest.GCP.secret_assessor import Secret
 
-secret_value = Secret.get("my-secret-name")
-``
+secret = Secret.get("MY_SECRET") # returns the secret value
+
+# If your secret is a JSON string, you can load it as a dictionary
+secret = Secret.get("MY_SECRET", parse="JSON") # returns the secret value as a dictionary
+
+# If your secret is a YAML string, you can load it as a dictionary
+secret = Secret.get("MY_SECRET", parse="YAML") # returns the secret value as a dictionary
+```
 
 # Local development
 

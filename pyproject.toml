@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "surquest-GCP-secret-assessor"
-version = "0.0.1rc5"
+version = "0.0.1"
 description = "Utility package for assessing Google Cloud Platform (GCP) secrets uniformly"
 authors = [
     {name= "Michal Švarc", email= "michal.svarc@surquest.com"}
