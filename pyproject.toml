@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "surquest-GCP-secret-assessor"
-version = "0.0.3"
+version = "0.0.4"
 description = "Utility package for assessing Google Cloud Platform (GCP) secrets uniformly"
 authors = [
     {name= "Michal Švarc", email= "michal.svarc@surquest.com"}
@@ -15,6 +15,10 @@ dependencies = [
     "PyYAML >=6.0",
     "google-cloud-secret-manager >= 2.10.0, < 3.0.0",
     "google-auth >= 2.10.0, < 3.0.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
 ]
 
 [project.optional-dependencies]
